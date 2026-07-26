@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Date Proposal ❤️</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="hearts.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ==========================
+         SCREEN 1
+    =========================== -->
+
+    
+    <section id="screen1" class="screen active">
+
+        <img src="images/Fremah.jpeg"
+             alt="Fremah"
+             class="character">
+
+        <h1>
+            Will you go on a date with me? 🥺
+        </h1>
+
+        <div class="button-area">
+
+    <div id="noZone">
+
+    <button id="yesBtn">
+        Yes ❤️
+    </button>
+
+    <button id="noBtn">
+        No 🥺
+    </button>
+
+  </div>
+</div>
+
+    </section>
+
+    <p class="copyright">
+    Designed by Emma Boateng &copy; 2026
+</p>
+
+  
+
+
+<section id="screen2" class="screen">
+
+    <button class="back-btn">←</button>
+
+    <img src="images/blush.jpeg"
+         alt="blush"
+         class="character">
+
+    <h1>
+        You actually said yes? 🥺
+    </h1>
+
+    <p>
+        I was so ready for you to say no.
+    </p>
+
+    <button id="nextBtn">
+        Next ♥️
+    </button>
+
+</section>
+
+
+   <!-- ==========================
+     SCREEN 3
+========================== -->
+
+<section id="screen3" class="screen">
+
+    <button class="back-btn">
+        ←
+    </button>
+
+    <h1>
+        So when are you free? 🗓️
+    </h1>
+
+    <div class="form-group">
+
+        <label>
+            Pick a Date
+        </label>
+
+        <input
+            type="date"
+            id="date">
+
+    </div>
+
+    <div class="form-group">
+
+        <label>
+            Pick a Time
+        </label>
+
+        <input
+            type="time"
+            id="time">
+
+    </div>
+
+    <button id="dateNext">
+        Continue ❤️
+    </button>
+
+</section>
+
+ 
+
+   <!-- ==========================
+     SCREEN 4
+========================== -->
+
+<section id="screen4" class="screen">
+
+    <button class="back-btn">
+        ←
+    </button>
+
+    <h1>
+        What are we feeling? 🍽️
+    </h1>
+
+    <div class="options food-options">
+
+        <div class="option" data-food="🍔 Burger">
+            🍔
+            <span>Burger</span>
+        </div>
+
+        <div class="option" data-food="🌭 Hot Dog">
+            🌭
+            <span>Hot Dog</span>
+        </div>
+
+        <div class="option" data-food="🍝 Pasta">
+            🍝
+            <span>Pasta</span>
+        </div>
+
+        <div class="option" data-food="🌮 Taco">
+            🌮
+            <span>Taco</span>
+        </div>
+
+        <div class="option" data-food="🍕 Pizza">
+            🍕
+            <span>Pizza</span>
+        </div>
+
+    </div>
+
+    <button id="foodNext" disabled>
+    Pick one first
+</button>
+</section>
+
+ 
+   <!-- ==========================
+     SCREEN 5
+========================== -->
+
+<section id="screen5" class="screen">
+
+    <button class="back-btn">
+        ←
+    </button>
+
+    <h1>
+        What's your vibe? 🥂
+    </h1>
+
+    <div class="options activity-options">
+
+        <div class="option"
+             data-activity="⛳ Mini Golf">
+
+            ⛳
+
+            <span>
+                Mini Golf
+            </span>
+
+        </div>
+
+        <div class="option"
+             data-activity="🎳 Bowling">
+
+            🎳
+
+            <span>
+                Bowling
+            </span>
+
+        </div>
+
+        <div class="option"
+             data-activity="🎬 Movie">
+
+            🎬
+
+            <span>
+                Movie
+            </span>
+
+        </div>
+
+        <div class="option"
+             data-activity="🧺 Picnic">
+
+            🧺
+
+            <span>
+                Picnic
+            </span>
+
+        </div>
+
+        <div class="option"
+             data-activity="🎡 Theme Park">
+
+            🎡
+
+            <span>
+                Theme Park
+            </span>
+
+        </div>
+
+        <div class="option"
+             data-activity="🏖️ Beach">
+
+            🏖️
+
+            <span>
+                Beach
+            </span>
+
+        </div>
+
+    </div>
+
+    <button id="activityNext" disabled>
+    Pick one first
+</button>
+
+</section>
+
+
+
+  <!-- ==========================
+     SCREEN 6
+========================== -->
+
+<section id="screen6" class="screen">
+
+    <button class="back-btn">
+        ←
+    </button>
+
+    <img src="images/love.jpeg"
+         alt="Cat"
+         class="character">
+
+    <h1>
+        I got you girl 💕
+    </h1>
+
+   <p id="pickupMessage">
+    Be ready...
+    I'm coming to pick you up! 🚗❤️
+</p>
+
+    <div class="summary">
+
+        <p>
+            📅
+            <span id="summaryDate"></span>
+        </p>
+
+        <p>
+            🕒
+            <span id="summaryTime"></span>
+        </p>
+
+        <p>
+            🍕
+            <span id="summaryFood"></span>
+        </p>
+
+        <p>
+            🎉
+            <span id="summaryActivity"></span>
+        </p>
+
+        <button id="copyBtn">
+    📋 Copy & Send to Me
+</button>
+    </div>
+
+</section>
+
+ 
+
+</div>
+<div id="hearts-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+<script src="hearts.js"></script>
+<script src="confetti.js"></script>
+
+</body>
+</html>
