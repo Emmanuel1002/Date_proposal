@@ -332,7 +332,6 @@ input:focus{
 
 }
 
-
 /* ===========================
    MOBILE
 =========================== */
@@ -351,11 +350,31 @@ input:focus{
 
 }
 
-button{
+button:not(#yesBtn):not(#noBtn){
 
     width:100%;
 
 }
+
+#yesBtn,
+#noBtn{
+
+    width:140px;
+
+}
+
+#yesBtn{
+
+    left:30%;
+
+}
+
+#noBtn{
+
+    left:70%;
+
+}
+
 .button-area{
 
     display:flex;
@@ -367,7 +386,6 @@ button{
 }
 
 }
-
 /*===========================
     BUTTON PLAYGROUND
 ===========================*/
