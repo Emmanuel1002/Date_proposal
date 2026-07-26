@@ -365,23 +365,16 @@ button:not(#yesBtn):not(#noBtn){
 
 #yesBtn{
 
-    left:28%;
+    left:20px;
+    transform:none;
 
 }
 
 #noBtn{
 
-    left:72%;
-
-}
-
-.button-area{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
+    right:20px;
+    left:auto;
+    transform:none;
 
 }
 
